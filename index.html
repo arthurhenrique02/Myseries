@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/alerts.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-header">
+            <a class="nav-header-link" href="/">Home</a>
+            <a class="nav-header-link" href="/series_list.html">Series</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- ALERT -->
+        <div id="alert" class="alert hidden">
+            <span id="alert-message"></span>
+            <span class="closebtn" onclick="closeAlert()">&times;</span>
+        </div>
+        <h3 class="register-text">Adicionar série</h3>
+        <form id="register-form">
+            <input type="text" name="name" id="name"  placeholder="Nome">
+            <input type="number" name="release" id="release" placeholder="Ano de lançamento">
+            <input type="text" name="author" id="author" placeholder="Autor">
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

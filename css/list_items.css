@@ -1,0 +1,19 @@
+.glass-effect {
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.875rem rgba(20, 20, 20, 0.1);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    border: 0.06rem solid rgba(255, 255, 255, 0.3);
+}
+
+.card {
+    height: 13rem;
+    width: 9.3rem;
+}
+
+.itens-row {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
