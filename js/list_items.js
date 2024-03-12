@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   let itensList = document.getElementById("list");
-  console.log(itensList);
 
-  console.log("DOM fully loaded and parsed");
   // get items or empty list
   var series = JSON.parse(localStorage.getItem("series")) || [];
 
-  console.log(series);
   // create list items
   series.forEach((serie) => {
     let title = document.createElement("h3");

@@ -1,3 +1,8 @@
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
 .glass-effect {
     background: rgba(255, 255, 255, 0.31);
     border-radius: 1rem;
@@ -17,6 +22,8 @@
     display: flex;
     flex-flow: row wrap;
     height: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
 #list li {
@@ -40,4 +47,19 @@
     color: #000000;
     text-align: center;
     margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+    #list {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    #list li {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
 }
